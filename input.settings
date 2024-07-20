@@ -1,0 +1,6 @@
+[Combat]
+IK_LControl=(Action=SCAARTaunt)
+IK_Mouse5=(Action=SCAARDodge)
+
+[Exploration]
+IK_LControl=(Action=SCAARTaunt)

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+
+  <Group id="SCAARmodMain" displayName="Mods.scaar_name">
+  
+    <PresetsArray>
+
+      <Preset id="0" displayName="scaar_vanilla" >
+        <Entry varId="SCAARmodEnabled" value="true" />
+		
+		<Entry varId="SCAARDodgeSet" value="0" />
+		<Entry varId="SCAARCombatMovementSet" value="0" />
+		<Entry varId="SCAARCombatIdleSet" value="0" />
+		<Entry varId="SCAARLongDodgeSet" value="0" />
+
+        <Entry varId="SCAARmodInit" value="true" />
+      </Preset>
+
+      <Preset id="1" displayName="scaar_combine_forces" >
+        <Entry varId="SCAARmodEnabled" value="true" />
+		
+		<Entry varId="SCAARDodgeSet" value="1" />
+		<Entry varId="SCAARCombatMovementSet" value="1" />
+		<Entry varId="SCAARCombatIdleSet" value="0" />
+		<Entry varId="SCAARLongDodgeSet" value="1" />
+
+        <Entry varId="SCAARmodInit" value="true" />
+      </Preset>
+
+      <Preset id="2" displayName="scaar_intense" >
+        <Entry varId="SCAARmodEnabled" value="true" />
+		
+		<Entry varId="SCAARDodgeSet" value="2" />
+		<Entry varId="SCAARCombatMovementSet" value="2" />
+		<Entry varId="SCAARCombatIdleSet" value="1" />
+		<Entry varId="SCAARLongDodgeSet" value="2" />
+
+        <Entry varId="SCAARmodInit" value="true" />
+      </Preset>
+	  
+	   <Preset id="3" displayName="scaar_revolve" >
+        <Entry varId="SCAARmodEnabled" value="true" />
+		
+		<Entry varId="SCAARDodgeSet" value="3" />
+		<Entry varId="SCAARCombatMovementSet" value="0" />
+		<Entry varId="SCAARCombatIdleSet" value="0" />
+		<Entry varId="SCAARLongDodgeSet" value="3" />
+
+        <Entry varId="SCAARmodInit" value="true" />
+      </Preset>
+	  
+	   <Preset id="4" displayName="scaar_technical" >
+        <Entry varId="SCAARmodEnabled" value="true" />
+		
+		<Entry varId="SCAARDodgeSet" value="4" />
+		<Entry varId="SCAARCombatMovementSet" value="1" />
+		<Entry varId="SCAARCombatIdleSet" value="1" />
+		<Entry varId="SCAARLongDodgeSet" value="4" />
+
+        <Entry varId="SCAARmodInit" value="true" />
+      </Preset>
+	  
+    </PresetsArray>
+
+    <VisibleVars>
+	
+		<Var id="SCAARmodInit" displayName="scaar_init" displayType="TOGGLE" visibilityCondition="hideAlways" />
+		
+        <Var id="SCAARmodEnabled" displayName="scaar_mod_enabled" displayType="TOGGLE"></Var>
+		
+		<Var id="SCAARDodgeSet" displayName="scaar_dodge_set" displayType="OPTIONS"> 	
+          <OptionsArray>
+            <Option id="0" displayName="scaar_vanilla">
+              <Entry varId="SCAARDodgeSet" value="0"/>
+            </Option>
+            <Option id="1" displayName="scaar_combine_forces">
+              <Entry varId="SCAARDodgeSet" value="1"/>
+            </Option>
+            <Option id="2" displayName="scaar_intense">
+              <Entry varId="SCAARDodgeSet" value="2"/>
+            </Option>
+            <Option id="3" displayName="scaar_revolve">
+              <Entry varId="SCAARDodgeSet" value="3"/>
+            </Option>
+			<Option id="4" displayName="scaar_technical">
+              <Entry varId="SCAARDodgeSet" value="4"/>
+            </Option>
+          </OptionsArray>
+        </Var>
+		
+        <Var id="SCAARCombatMovementSet" displayName="scaar_combat_movement_set" displayType="OPTIONS"> 	
+          <OptionsArray>
+            <Option id="0" displayName="scaar_v1">
+              <Entry varId="SCAARCombatMovementSet" value="1"/>
+            </Option>
+            <Option id="1" displayName="scaar_v2">
+              <Entry varId="SCAARCombatMovementSet" value="2"/>
+            </Option>
+			<Option id="2" displayName="scaar_v3">
+              <Entry varId="SCAARCombatMovementSet" value="3"/>
+            </Option>
+          </OptionsArray>
+        </Var>
+		
+        <Var id="SCAARCombatIdleSet" displayName="scaar_combat_idle_set" displayType="OPTIONS"> 	
+          <OptionsArray>
+            <Option id="0" displayName="scaar_1handed">
+              <Entry varId="SCAARCombatIdleSet" value="0"/>
+            </Option>
+            <Option id="1" displayName="scaar_2handed">
+              <Entry varId="SCAARCombatIdleSet" value="1"/>
+            </Option>
+          </OptionsArray>
+        </Var>
+		
+        <Var id="SCAARLongDodgeSet" displayName="scaar_long_dodge_set" displayType="OPTIONS"> 	
+          <OptionsArray>
+            <Option id="0" displayName="scaar_vanilla">
+              <Entry varId="SCAARLongDodgeSet" value="0"/>
+            </Option>
+            <Option id="1" displayName="scaar_combine_forces">
+              <Entry varId="SCAARLongDodgeSet" value="1"/>
+            </Option>
+            <Option id="2" displayName="scaar_intense">
+              <Entry varId="SCAARLongDodgeSet" value="2"/>
+            </Option>
+			<Option id="3" displayName="scaar_revolve">
+              <Entry varId="SCAARLongDodgeSet" value="3"/>
+            </Option>
+			<Option id="4" displayName="scaar_technical">
+              <Entry varId="SCAARLongDodgeSet" value="4"/>
+            </Option>
+          </OptionsArray>
+        </Var>
+    </VisibleVars>
+	
+    </Group>
+
+</UserConfig>
