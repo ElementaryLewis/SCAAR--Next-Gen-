@@ -18,7 +18,8 @@ class CR4CommonIngameMenu extends CR4MenuBase
 		var menuName : name;
 		var selectionPopupRef : CR4ItemSelectionPopup; 
 		SCAARApplySettingsOnStateSwitch(); //SCAAR
-				
+		
+		
 		if ((!thePlayer.IsAlive() && !thePlayer.OnCheckUnconscious()) || theGame.HasBlackscreenRequested() || FactsQuerySum("nge_pause_menu_disabled") > 0 ) 
 		{
 			CloseMenu();

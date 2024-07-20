@@ -217,8 +217,10 @@ state Combat in CR4Player extends ExtendedMovable
 		
 		
 		
-	}
 		
+		
+	}
+	
 	timer function SCAARCombatLoop( timeDelta : float , id : int )
 	{
 		//var pressTime : float;
@@ -1267,10 +1269,6 @@ state Combat in CR4Player extends ExtendedMovable
 		FillDodgePlaylists( isRolling );
 		
 		if ( !parent.GetWeaponHolster().IsMeleeWeaponReady() )
-	
-		
-	
-		  
 		{
 			dodgeNum = 0;
 		}
@@ -1346,13 +1344,13 @@ state Combat in CR4Player extends ExtendedMovable
 		var i, rand, numOfAnims			: int;			
 
 		if ( dodgePlaylistFwd.Size() <= 0 )
-			dodgePlaylistFwd = CreatePlaylist(4);					 //SCAAR
+			dodgePlaylistFwd = CreatePlaylist(4);		//SCAAR
 		
 		if ( dodgePlaylistFlipFwd.Size() <= 0 )
 			dodgePlaylistFlipFwd = CreatePlaylist(4);				//SCAAR
 
 		if ( dodgePlaylistBck.Size() <= 0 )
-			dodgePlaylistBck = CreatePlaylist(6);					//SCAAR
+			dodgePlaylistBck = CreatePlaylist(6);		//SCAAR
 	}
 	
 	private function CreatePlaylist( numOfAnims : int ) : array<float>

@@ -74,7 +74,7 @@ state Exploration in CR4Player extends ExtendedMovable
 	{
 		parent.RemoveTimer( 'ResetStanceTimer' );
 		parent.RemoveTimer( 'ExplorationLoop');
-		parent.RemoveTimer( 'SCAARExplorationLoop');
+		parent.RemoveTimer( 'SCAARExplorationLoop');	//SCAAR
 
 		CameraCleanup();
 		
@@ -96,7 +96,6 @@ state Exploration in CR4Player extends ExtendedMovable
 			parent.tiedWalk = false;
 		
 		
-			 
 		super.OnLeaveState( nextStateName );
 
 
@@ -205,7 +204,6 @@ state Exploration in CR4Player extends ExtendedMovable
 	timer function ExplorationLoop( time : float , id : int)
 	{
 		ProcessPlayerOrientation();
-			  
 		parent.SetBehaviorMimicVariable( 'gameplayMimicsMode', (float)(int)PGMM_Default ); 
 		
 		if ( parent.IsThreatened() )
